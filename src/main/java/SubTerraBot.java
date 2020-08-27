@@ -10,7 +10,7 @@ public class SubTerraBot extends TelegramLongPollingBot{
         String command = update.getMessage().getText();
         SendMessage message = new SendMessage();
         if(command.startsWith("reserv")){       // reserve command
-            message.setText(callendar.getSlot(/* stuff */));
+            message.setText(callendar.getSlot(/* stuff */ 0,0,0,0,0,"l"));
         }
     }
 
